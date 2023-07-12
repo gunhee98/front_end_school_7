@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3 {
+  font: inherit;
+}
+body {
+  font-family: "Pretendard-Regular", sans-serif;
+}
+.card {
+  width: 288px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.card header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 16px 12px 16px;
+}
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.fwb {
+  color: #29363d;
+  font-family: "Pretendard-Bold";
+}
+.c-h-text {
+  overflow: hidden;
+}
+.ell1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ell2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.6;
+  height: calc(1em * 2 * 1.6);
+}
+.small-font {
+  font-size: 12px;
+  color: #5a6a72;
+}
+.thumbnail {
+  width: 100%;
+  aspect-ratio: 288/196;
+  object-fit: cover;
+}
+.c-content {
+  padding: 10px 16px 20px 16px;
+}
+.c-content .ell2 {
+  margin-bottom: 16px;
+}
+.read {
+  font-size: 14px;
+  padding: 3px 6px;
+  width: 60px;
+  text-decoration: underline;
+  position: relative;
+}
+.read::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  border-color: #29363d;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-10px, -50%) rotate(45deg);
+  transition: all 0.3s;
+}
+.read:hover::after {
+  border-color: royalblue;
+  transform: translate(0, -50%) rotate(405deg);
+}
+.card {
+  position: relative;
+}
+.btn-group {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+.btn-group button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+.btn-group button img {
+  width: 32px;
+  vertical-align: top;
+}
