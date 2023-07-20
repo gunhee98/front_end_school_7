@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+}
+.main .main-form {
+  background-color: skyblue;
+  width: 400px;
+}
+.main .main-diary {
+  background-color: slateblue;
+  flex-grow: 1;
+}
