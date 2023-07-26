@@ -1,11 +1,60 @@
 .main {
   display: flex;
+  gap: 39px;
+  padding: 0px 108px;
 }
 .main .main-form {
-  background-color: skyblue;
-  width: 400px;
+  width: 416px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding-top: 62px;
+  padding-right: 39px;
+  border-right: 1px solid #ff4f6e;
 }
 .main .main-diary {
-  background-color: slateblue;
-  flex-grow: 1;
+  flex-grow: 2;
 }
+.main-form .heart-title {
+  font-family: "Pretendard-Bold";
+  line-height: 1;
+  padding: 0.5em 0 0.5em 2em;
+  background-image: url(../img/heart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 2em;
+  margin-bottom: 16px;
+}
+.main-form .form {
+  width: 100%;
+}
+.list {
+  padding-top: 78px;
+}
+.list-item {
+  padding: 60px 48px;
+  border-width: 4px 1px 1px 1px;
+  border-style: solid;
+  border-color: #677880;
+  margin-bottom: 40px;
+  position: relative;
+}
+.list .list-item header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.list .list-item header .time {
+  font-size: 12px;
+}
+.list-item header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #677880;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+ol
