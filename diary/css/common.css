@@ -64,12 +64,34 @@ body {
   padding: 0;
   position: absolute;
 }
+@media (min-width: 601px) {
+  .header .login-text p::after {
+    content: "|";
+    color: #d8ddde;
+    margin-left: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .header .login-text p {
+    position: absolute;
+    top: 140px;
+    right: 30px;
+  }
+}
+.max-width {
+  width: 1284px;
+  max-width: 100%;
+  max-width: calc(100% - 60px);
+  margin: auto;
+}
 .header {
+  background-color: white;
+}
+.header .max-width {
+  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 40px;
-  background-color: white;
 }
 .header .login-text {
   display: flex;
@@ -80,11 +102,7 @@ body {
   font-family: "Pretendard-Bold";
   box-shadow: inset 0 -0.5em 0 rgba(255, 79, 110, 0.8);
 }
-.header .login-text p::after {
-  content: "|";
-  color: #d8ddde;
-  margin-left: 24px;
-}
+
 [class^="btn"] {
   display: inline-flex;
   padding: 0 20px 0 52px;
