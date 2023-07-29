@@ -50,24 +50,24 @@ body {
 .login-input {
   margin-bottom: 10px;
 }
-
-.login-input input {
+.login-input .border-red,
+.login-input .border-red {
+  border: 2px solid #f4492e;
+}
+.login-input .input {
   width: 100%;
   padding: 15px 16px;
   margin-bottom: 6px;
   border-radius: 5px;
   border: 1px solid #c4c4c4;
 }
-.login-input #id {
-  border: 2px solid #f4492e;
-}
 
-.login-input .text-id {
+.login-input .text-info {
   color: #f4492e;
   font-size: 14px;
   display: none;
 }
-.login-input .text-id.show {
+.login-input .text-info.show {
   display: block;
 }
 .login-input input::placeholder {
