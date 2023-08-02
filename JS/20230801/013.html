@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String</title>
+  </head>
+  <body>
+    <script>
+      let str = "Hello World";
+
+      console.log(str.slice(0, 5));
+      console.log(str.slice(0, 7));
+      console.log(str.slice(7, 3));
+      // 문제: indexOf, search, slice, substring 4개를 사용하여 출력문자열을 출력해주세요.(indexOf, search 2개 중 하나 사용 필수이며, slice, substring 2개 중 하나 사용 필수)
+      let str2 = "paullab CEO leehojun CTO kimdohyeon";
+
+      // 출력 문자열
+      console.log(str2.slice(str2.indexOf("CEO"), str2.indexOf("CTO") - 1));
+      console.log(str2.slice(str2.indexOf("CTO")));
+      // 1. CEO leehojun
+      // 2. CTO kimdohyeon
+
+      // substr(시작위치, 길이) : 시작인덱스부터 길이만큼 반환합니다.
+      // https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/substr
+      // 명세에서 사라질 수도 있음
+      // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring#the_difference_between_substring_and_substr
+      //substr 대신 substring 이나 slice를 사용 권장
+      console.log(txt2.substr(8, 3));
+      console.log(txt2.substr(txt2.indexOf("C"), 3));
+    </script>
+  </body>
+</html>
