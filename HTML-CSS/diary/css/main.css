@@ -1,6 +1,7 @@
 .main {
   display: flex;
   gap: 39px;
+  min-height: 100vh;
 }
 .main .main-form {
   width: 416px;
