@@ -72,8 +72,29 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+}
+
+form input {
+  border: 0;
+
+  padding: 10px;
+  font-size: 20px;
+  flex-grow: 1;
+}
+form {
+  border-bottom: 4px solid #d9d9d9;
+  display: flex;
+}
+form button {
+  border: 0;
+  font-weight: bold;
+  background-color: #eee;
+  color: #ff007a;
+  padding: 0px 10px;
+  font-size: 30px;
 }
